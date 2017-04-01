@@ -4,4 +4,4 @@ This is the first changes in README.md
 
 first change from remote
 
-second change not staged
+change not staged
