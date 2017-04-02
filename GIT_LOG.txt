@@ -1,2 +1,2 @@
 test git log
-change file
+change text
