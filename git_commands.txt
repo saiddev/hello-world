@@ -1,0 +1,8 @@
+// Changer l'editeur
+git config --global core.editor emacs
+
+// lister la config
+git config --list
+
+// Cloner sous un nom
+git clone https://github.com/libgit2/libgit2 mylibgit
