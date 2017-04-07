@@ -15,3 +15,9 @@ git diff
 
 // compare ce qui est stagé avec ce qui est commité
 git diff --staged(or --cached)
+
+// remove and stage removal file
+git rm test
+
+// remove file from staged area
+git rm --cache file
