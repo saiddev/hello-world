@@ -6,3 +6,12 @@ git config --list
 
 // Cloner sous un nom
 git clone https://github.com/libgit2/libgit2 mylibgit
+
+// Affichage courte de status
+git status -s
+
+//compare l'espace de travail avec staging
+git diff
+
+// compare ce qui est stagé avec ce qui est commité
+git diff --staged(or --cached)
