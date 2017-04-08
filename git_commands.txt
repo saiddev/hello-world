@@ -21,3 +21,18 @@ git rm test
 
 // remove file from staged area
 git rm --cache file
+
+// show commit history
+git log
+
+// shows the difference introduced in each commit
+git log -p
+
+// limits to a number of entries
+git log -3
+
+// change the format of the output in oneline per commit(short,full,fuller)
+git log --pretty=oneline
+
+// To specify the format use format option
+git log --pretty=format:"%h - %an, %ar : %s"
