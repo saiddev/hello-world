@@ -42,3 +42,12 @@ git log --since=2.weeks
 
 // Limiting log output by searching string "-S". Only show commits adding or removing code matching the string
 git log -Sstring
+
+// amend a commit
+git commit --amend
+
+// unstage staged changes 
+git reset HEAD <file>
+
+// discard changes in working directory
+git checkout -- <file>
