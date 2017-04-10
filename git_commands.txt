@@ -36,3 +36,9 @@ git log --pretty=oneline
 
 // To specify the format use format option
 git log --pretty=format:"%h - %an, %ar : %s"
+
+// Limiting Log Output by date(since,after,until,before) 
+git log --since=2.weeks
+
+// Limiting log output by searching string "-S". Only show commits adding or removing code matching the string
+git log -Sstring
