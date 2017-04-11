@@ -51,3 +51,18 @@ git reset HEAD <file>
 
 // discard changes in working directory
 git checkout -- <file>
+
+// list the shortnames of each remote (-v shows you the URLs that Git has stored for the shortname to be used when reading and writing to that remote)
+git remote
+
+// show more information about a particular remote
+git remote show shortname
+
+// add remote repository
+git remote shortname url
+
+// git fetch command only downloads the data to local repository – it doesn’t automatically merge it with any of work or modify what are currently in working
+git fetch remoteshortname
+
+//git pull command automatically fetch and then merge the remote branch into local branch.
+git pull remoteshortname
