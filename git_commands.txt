@@ -84,3 +84,7 @@ git push origin [tagname]
 
 // Tag can't be checkouted but we crate a new branch at a specific tag
 tag checkout -b [branchname] [tagname]
+
+// create aliases
+git config --global alias.co checkout
+git config --global alias.unstage 'reset HEAD --'
