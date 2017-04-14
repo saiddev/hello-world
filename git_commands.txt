@@ -92,8 +92,18 @@ git config --global alias.unstage 'reset HEAD --'
 // create branch - only creates branch, does not switch to the new created branch
 git branch testing
 
+// delete a branch
+git branch -d hotfix
+
 // shows current branch (that the HEAD point to)
 git log --oneline --decorate
 
 // switch to an existing branch(SWITCHING BRANCHES CHANGES FILES IN WORKING DIRECTORY)
 git checkout testing
+
+// create new branch and switch to it at the same time
+git checkout -b iss53
+
+// to merge branch1 into master
+git checkout master
+git merge branch1
