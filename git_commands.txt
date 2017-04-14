@@ -88,3 +88,12 @@ tag checkout -b [branchname] [tagname]
 // create aliases
 git config --global alias.co checkout
 git config --global alias.unstage 'reset HEAD --'
+
+// create branch - only creates branch, does not switch to the new created branch
+git branch testing
+
+// shows current branch (that the HEAD point to)
+git log --oneline --decorate
+
+// switch to an existing branch(SWITCHING BRANCHES CHANGES FILES IN WORKING DIRECTORY)
+git checkout testing
