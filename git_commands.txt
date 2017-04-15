@@ -95,7 +95,7 @@ git branch testing
 // delete a branch
 git branch -d hotfix
 
-// shows current branch (that the HEAD point to)
+//lists commits and shows current branch (that the HEAD point to)
 git log --oneline --decorate
 
 // switch to an existing branch(SWITCHING BRANCHES CHANGES FILES IN WORKING DIRECTORY)
@@ -107,3 +107,13 @@ git checkout -b iss53
 // to merge branch1 into master
 git checkout master
 git merge branch1
+
+// Listing branchs. the * character prefixes the branch that you currently have checked out(i.e., the branch that HEAD points to)
+git branch
+
+// To see the last commit on each branch
+git branch -v
+
+//The useful --merged and --no-merged options filters branch list to that you have or have not yet merged into the branch you’re currently on
+git branch --mergded(or --no-merged)
+
