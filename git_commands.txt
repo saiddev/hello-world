@@ -139,3 +139,6 @@ git checkout branchName
 
 // to change the upstream branch you’re tracking use -u or --set-upstream-to option
 git branch -u origin/serverfix
+
+// to delete a remote branch 
+git push origin --delete serverfix
