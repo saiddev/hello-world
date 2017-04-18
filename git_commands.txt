@@ -64,6 +64,9 @@ git remote shortname url
 // git fetch command only downloads the data to local repository – it doesn’t automatically merge it with any of work or modify what are currently in working
 git fetch remoteshortname
 
+// fetch from all remotes
+git fetch --all
+
 //git pull command automatically fetch and then merge the remote branch into local branch.
 git pull remoteshortname
 
@@ -111,9 +114,28 @@ git merge branch1
 // Listing branchs. the * character prefixes the branch that you currently have checked out(i.e., the branch that HEAD points to)
 git branch
 
+// Listing branches including what each branch is tracking and if your local branch is ahead, behind or both.
+git branch -vv
+
 // To see the last commit on each branch
 git branch -v
 
 //The useful --merged and --no-merged options filters branch list to that you have or have not yet merged into the branch you’re currently on
-git branch --mergded(or --no-merged)
+git branch --merged(or --no-merged)
 
+// to share a branch
+git push <remote> <branch> (example git push origin serverfix)
+
+// to work on new created branch in server 
+git fetch origin
+git checkout -b [branch] [remotename]/[branch]
+
+// a shortcut for last command
+git checkout --track [remotename]/[branch]
+
+// other shortcut but only If the branch name to checkout (a) doesn’t exist and 
+// (b) exactly matches a name on only one remote, Git will create a tracking branch for you:
+git checkout branchName
+
+// to change the upstream branch you’re tracking use -u or --set-upstream-to option
+git branch -u origin/serverfix
